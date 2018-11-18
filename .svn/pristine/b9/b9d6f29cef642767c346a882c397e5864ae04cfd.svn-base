@@ -1,0 +1,16 @@
+package com.dsj.service;
+
+import com.dsj.pojo.SysUser;
+
+public interface SysUserService {
+	int save(SysUser su);
+	
+	int delete(String userName ,String pwd);
+	
+	int update(SysUser su);
+	
+	SysUser selectSysUser(String userName, String pwd);
+	
+	
+
+}

@@ -1,0 +1,46 @@
+package com.dsj.pojo;
+
+public class ExamPaper
+{
+	private int examPaperId;
+	private String examQuestions;
+
+	public ExamPaper()
+	{
+		super();
+	}
+
+	public ExamPaper(int examPaperId, String examQuestions)
+	{
+		super();
+		this.examPaperId = examPaperId;
+		this.examQuestions = examQuestions;
+	}
+
+	public int getExamPaperId()
+	{
+		return examPaperId;
+	}
+
+	public void setExamPaperId(int examPaperId)
+	{
+		this.examPaperId = examPaperId;
+	}
+
+	public String getExamQuestions()
+	{
+		return examQuestions;
+	}
+
+	public void setExamQuestions(String examQuestions)
+	{
+		this.examQuestions = examQuestions;
+	}
+
+	@Override
+	public String toString()
+	{
+		return "ExamPaper [examPaperId=" + examPaperId + ", examQuestions=" + examQuestions + "]";
+	}
+
+}

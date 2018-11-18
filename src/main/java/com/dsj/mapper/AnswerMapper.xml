@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dsj.mapper.AnswerMapper">
+	<select id="queryStuAnsAndGra">
+		select student_answer,grade,exam_paper_id from answer_sheet where exam_id=#{exam_id}
+		and student_id=#{stu_id}
+	</select>
+	<select id="queryRigAns">
+		select right_answer from qusetion_pool where question_id=#{ques_id}
+	</select>
+	
+	<select id="queryquestions">
+		select exam_questions from exam_paper where exam_paper_id=#{paper_id}
+	</select>
+</mapper>

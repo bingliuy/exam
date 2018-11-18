@@ -1,0 +1,23 @@
+package com.dsj.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.dsj.mapper.ExamMapper;
+import com.dsj.pojo.Exam;
+
+@Service
+public class ExamServiceImpl {
+	@Autowired
+	ExamMapper examMapper;
+	
+	@Transactional(readOnly=true)
+	public List<Exam> queryAll() {
+		// TODO Auto-generated method stub
+		return examMapper.queryAll();
+	}
+
+}

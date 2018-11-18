@@ -1,0 +1,37 @@
+package com.dsj.pojo;
+
+import java.sql.Timestamp;
+
+public class Exam {
+	private Integer examId;
+	private Integer examPaperId;
+	private Timestamp beginTime;
+	private Timestamp endTime;
+	public Integer getExamId() {
+		return examId;
+	}
+	public void setExamId(Integer examId) {
+		this.examId = examId;
+	}
+	public Integer getExamPaperId() {
+		return examPaperId;
+	}
+	public void setExamPaperId(Integer examPaperId) {
+		this.examPaperId = examPaperId;
+	}
+	public Timestamp getBeginTime() {
+		return beginTime;
+	}
+	public void setBeginTime(Timestamp beginTime) {
+		this.beginTime = beginTime;
+	}
+	public Timestamp getEndTime() {
+		return endTime;
+	}
+	public void setEndTime(Timestamp endTime) {
+		this.endTime = endTime;
+	}
+	
+	
+
+}

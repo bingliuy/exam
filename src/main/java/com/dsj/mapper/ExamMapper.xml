@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace定义当前的xml配置文件与哪一个dao接口文件，是对应关系 -->
+<mapper namespace="com.dsj.mapper.ExamMapper">
+
+	<select id="queryAll" resultType="exam">
+		select * from exam
+	</select>
+
+</mapper>

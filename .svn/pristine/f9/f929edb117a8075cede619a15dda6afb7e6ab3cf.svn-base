@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dsj.mapper.AnswerMapper">
+	<select id="queryStuAnsAndGra">
+		select student_answer,grade from answer_sheet
+	</select>
+	
+	<select id="queryRigAns">
+		select right_answer from qusetion_pool
+	</select>
+</mapper>

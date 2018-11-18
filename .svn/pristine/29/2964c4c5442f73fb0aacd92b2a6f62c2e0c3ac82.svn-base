@@ -1,0 +1,63 @@
+package com.dsj.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.dsj.mapper.SysUserMapper;
+import com.dsj.pojo.SysUser;
+import com.dsj.service.SysUserService;
+
+public class ServiceImpl implements SysUserService{
+	@Autowired
+	SysUserMapper sysMapper;
+
+	
+	public int save(SysUser su) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int delete(String userName, String pwd) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int update(SysUser su) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public SysUser selectSysUser(String userName, String pwd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	/*@Transactional(readOnly=true)
+	public SysUser selectSysUser(String userName,String pwd) {
+		// TODO Auto-generated method stub
+		return sysMapper.selectSysUser(userName,pwd);
+	}
+
+	@Override
+	public int save(SysUser su) {
+		// TODO Auto-generated method stub
+		return sysMapper.save(su);
+	}
+
+	@Override
+	public int delete(String userName,String pwd) {
+		// TODO Auto-generated method stub
+		return sysMapper.delete(userName,pwd);
+	}
+
+	@Override
+	public int update(SysUser su) {
+		// TODO Auto-generated method stub
+		return sysMapper.update(su);
+	}*/
+
+	
+	
+	
+
+}
